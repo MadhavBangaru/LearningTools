@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="08lXsLxOOpDva69_ODgN" name="Page-1">
-        <mxGraphModel dx="515" dy="387" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="710" dy="253" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -22,6 +22,9 @@
                 </mxCell>
                 <mxCell id="6" value="https://chat.openai.com/c/54a9bd6c-7e26-42b8-80e7-22132b391856" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="520" y="270" width="260" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="One Note Link:&amp;nbsp;&lt;br&gt;&lt;a href=&quot;onenote:https://d.docs.live.net/5558b12999e7636d/Documents/Learning%20Tools/DEVOPS/Kubernetes.one#section-id={8E3EFD13-5DD5-4EAD-9497-39535AD5C93C}&amp;amp;end&quot;&gt;Kubernetes&lt;/a&gt;&amp;nbsp; (&lt;a href=&quot;https://onedrive.live.com/view.aspx?resid=5558B12999E7636D%212409&amp;amp;id=documents&amp;amp;wd=target%28DEVOPS%2FKubernetes.one%7C8E3EFD13-5DD5-4EAD-9497-39535AD5C93C%2F%29&quot;&gt;Web view&lt;/a&gt;)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="360" width="150" height="40" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
