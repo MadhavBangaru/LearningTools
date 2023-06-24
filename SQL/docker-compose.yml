@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  mysql:
+    image: mysql:latest
+    restart: on-failure
+    container_name: db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - 3306:3306
+    volumes:
+      - ./mysql-data:/var/lib/mysql

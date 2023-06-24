@@ -1,0 +1,5 @@
+Inside the docker container
+
+------------------------
+mysql -u root -p 
+(password is root)

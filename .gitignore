@@ -1,0 +1,5 @@
+**/node_modules/
+**/mysql-data/
+**/mysqlvenv/
+**/package-lock.json
+**/.DS_Store
