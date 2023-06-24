@@ -1,0 +1,15 @@
+---------------
+Command to run App
+---------------
+uvicorn main:app --reload
+--------------------------
+main:app refers to the main.py file and the app instance in that file.
+
+--reload option automatically reloads the server whenever you make changes to the code.
+
+---------------
+Command to run My SQL container DB
+---------------
+mysql -u root -p 
+(password is root)
+--------------------------
