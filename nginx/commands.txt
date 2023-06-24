@@ -1,0 +1,1 @@
+docker run --name nginx-container -d -p 9090:80 my-nginx
