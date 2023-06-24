@@ -1,0 +1,35 @@
+kubectl apply -f jenkins-deployment.yaml
+
+kubectl get deployments
+
+kubectl get pods
+
+kubectl get services
+
+Command	Description
+kubectl get pods	List all pods in the current namespace.
+kubectl get deployments	List all deployments in the current namespace.
+kubectl get services	List all services in the current namespace.
+kubectl describe pod <pod-name>	Get detailed information about a specific pod.
+kubectl describe deployment <deployment>	Get detailed information about a specific deployment.
+kubectl describe service <service>	Get detailed information about a specific service.
+kubectl logs <pod-name>	Print the logs of a specific pod.
+kubectl exec -it <pod-name> -- <command>	Execute a command inside a specific pod interactively.
+kubectl create -f <yaml-file>	Create resources defined in a YAML file.
+kubectl apply -f <yaml-file>	Create or update resources defined in a YAML file.
+kubectl delete pod <pod-name>	Delete a specific pod.
+kubectl delete deployment <deployment>	Delete a specific deployment.
+kubectl delete service <service>	Delete a specific service.
+kubectl scale deployment <deployment> --replicas=<replica-count>	Scale the number of replicas for a deployment.
+kubectl port-forward <pod-name> <local-port>:<pod-port>	Forward local port to a specific pod's port for direct access.
+kubectl get ingress	List all ingresses in the current namespace.
+kubectl describe ingress <ingress>	Get detailed information about a specific ingress.
+kubectl apply -f <yaml-file> --validate=false	Apply a YAML file without performing validation.
+kubectl get nodes	List all nodes in the cluster.
+kubectl get namespaces	List all namespaces in the cluster.
+kubectl create namespace <namespace>	Create a new namespace.
+kubectl config use-context <context>	Switch to a different context (cluster).
+kubectl config set-context <context>	Create a new context (cluster).
+kubectl config get-contexts	List all available contexts (clusters).
+kubectl config current-context	Display the current context (cluster).
+kubectl cluster-info	Display cluster information.

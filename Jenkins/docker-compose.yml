@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  jenkins:
+    container_name: jenkins
+    image: jenkins/jenkins
+    ports:
+      - "8081:8080"
+      - "50001:50000"
+    restart: on-failure
+    volumes:
+      - ./jenkins_home:/var/jenkins_home
+    networks:
+      - jenkins_network
+  jenkins-agent:
+    container_name: jenkins_agent
+    image: myubuntu
+    build:
+      context: jenkins_agent
+    volumes:
+      - ./jenkins_agent:/opt
+    command: bin/bash
+    tty: true
+    networks:
+      - jenkins_network
+networks:
+  jenkins_network:
