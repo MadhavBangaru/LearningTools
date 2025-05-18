@@ -1,0 +1,47 @@
+version: "3.8"
+
+services:
+  rabbitmq:
+    image: rabbitmq:3.9-management-alpine
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    networks:
+      - app-network
+
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - app-network
+
+  fastapi-app:
+    build: ./fastapi-app
+    ports:
+      - "8000:8000"
+    environment:
+      RABBITMQ_HOST: rabbitmq
+    depends_on:
+      - rabbitmq
+    networks:
+      - app-network
+
+  event-consumer:
+    build: ./event-consumer
+    environment:
+      RABBITMQ_HOST: rabbitmq
+      MONGODB_URI: mongodb://mongodb:27017/mydatabase
+    depends_on:
+      - rabbitmq
+      - mongodb
+    networks:
+      - app-network
+
+networks:
+  app-network:
+
+volumes:
+  mongodb_data:
