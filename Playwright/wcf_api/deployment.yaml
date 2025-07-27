@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wcf-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: wcf-api
+  template:
+    metadata:
+      labels:
+        app: wcf-api
+    spec:
+      containers:
+        - name: wcf-api
+          image: your-docker-registry/wcf-api:latest
+          ports:
+            - containerPort: 8000

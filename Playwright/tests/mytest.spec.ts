@@ -14,4 +14,8 @@ test("open dashboard in new tab and interact", async ({ page, context }) => {
 
   const dashboard = new DashboardPage(dashboardPage);
   expect(await dashboard.isWelcomeVisible()).toBeTruthy();
+
+  // Take a screenshot of the dashboard page
+  await dashboardPage.screenshot({ path: "dashboard.png" });
+  // expect(await dashboard.isWelcomeVisible()).toBeTruthy();
 });
